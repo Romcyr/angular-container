@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { ContentContainerComponent } from './content-container/content-container.component';
+import {RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -13,9 +14,10 @@ import { ContentContainerComponent } from './content-container/content-container
     MainContainerComponent,
     ContentContainerComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        RouterOutlet
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
